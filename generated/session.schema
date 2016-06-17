@@ -1,0 +1,292 @@
+[
+  {
+    "name": "device",
+    "type": "record",
+    "fields": [
+      {
+        "name": "manufacturer",
+        "type": "string"
+      },
+      {
+        "name": "model",
+        "type": "string"
+      },
+      {
+        "name": "platform",
+        "type": "string"
+      },
+      {
+        "name": "os",
+        "type": "string"
+      },
+      {
+        "name": "os_version",
+        "type": "string"
+      },
+      {
+        "name": "screen_width",
+        "type": "integer"
+      },
+      {
+        "name": "screen_height",
+        "type": "integer"
+      },
+      {
+        "name": "language",
+        "type": "string"
+      }
+  ]},
+  {
+    "name": "user_properties",
+    "type": "record",
+    "fields": [
+      {
+        "name": "have_setup",
+        "type": "boolean"
+      },
+      {
+        "name": "last_language",
+        "type": "string"
+      },
+      {
+        "name": "have_hardware",
+        "type": "boolean"
+      },
+      {
+        "name": "have_extra_hardware",
+        "type": "boolean"
+      },
+      {
+        "name": "session_count",
+        "type": "integer"
+      },
+      {
+        "name": "playtime_sec",
+        "type": "float"
+      },
+      {
+        "name": "leveltime_sec",
+        "type": "float"
+      },
+      {
+        "name": "level_starts",
+        "type": "integer"
+      },
+      {
+        "name": "level_ends",
+        "type": "integer"
+      },
+      {
+        "name": "profiles",
+        "type": "integer"
+      },
+      {
+        "name": "last_mirror",
+        "type": "integer"
+      },
+      {
+        "name": "last_setup_debug",
+        "type": "string"
+      },
+      {
+        "name": "achievements_opened",
+        "type": "integer"
+      },
+      {
+        "name": "last_state",
+        "type": "string"
+      },
+      {
+        "name": "tangram",
+        "type": "record",
+        "fields": [
+          {
+            "name": "last_difficulty",
+            "type": "integer"
+          },
+          {
+            "name": "hints_used",
+            "type": "integer"
+          },
+          {
+            "name": "fov_hints_shown",
+            "type": "integer"
+          },
+          {
+            "name": "fov_hint_sec",
+            "type": "float"
+          },
+          {
+            "name": "table_hints_shown",
+            "type": "integer"
+          },
+          {
+            "name": "parallelogram_hints_shown",
+            "type": "integer"
+          }
+      ]}
+  ]},
+  {
+    "name": "player_state",
+    "type": "record",
+    "fields": [
+      {
+        "name": "achievements_completed",
+        "type": "integer"
+      },
+      {
+        "name": "tangram",
+        "type": "record",
+        "fields": [
+          {
+            "name": "treasure_achievements_completed",
+            "type": "integer"
+          },
+          {
+            "name": "classic_achievements_completed",
+            "type": "integer"
+          },
+          {
+            "name": "shared_achievements_completed",
+            "type": "integer"
+          },
+          {
+            "name": "beat_intro",
+            "type": "boolean"
+          },
+          {
+            "name": "intro_level",
+            "type": "integer"
+          },
+          {
+            "name": "current_hints",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_hints",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_hints_total",
+            "type": "integer"
+          },
+          {
+            "name": "classic_solved0",
+            "type": "integer"
+          },
+          {
+            "name": "classic_solved1",
+            "type": "integer"
+          },
+          {
+            "name": "classic_solved2",
+            "type": "integer"
+          },
+          {
+            "name": "classic_solved3",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_solved0",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_solved1",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_solved2",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_solved3",
+            "type": "integer"
+          },
+          {
+            "name": "treasure_solved_unique",
+            "type": "integer"
+          },
+          {
+            "name": "castles_completed_unique",
+            "type": "integer"
+          },
+          {
+            "name": "big_castles_completed_unique",
+            "type": "integer"
+          },
+          {
+            "name": "treasures_collected_unique",
+            "type": "integer"
+          },
+          {
+            "name": "people_rescued_unique",
+            "type": "integer"
+          },
+          {
+            "name": "has_entered_castle",
+            "type": "boolean"
+          },
+          {
+            "name": "rescued_homeless",
+            "type": "integer"
+          },
+          {
+            "name": "classic_enabled",
+            "type": "boolean"
+          }
+      ]}
+  ]},
+  {
+    "name": "leveltime_sec",
+    "type": "float"
+  },
+  {
+    "name": "language",
+    "type": "string"
+  },
+  {
+    "name": "last_state",
+    "type": "string"
+  },
+  {
+    "name": "tangram",
+    "type": "record",
+    "fields": [
+      {
+        "name": "last_difficulty",
+        "type": "integer"
+      },
+      {
+        "name": "num_started_treasure",
+        "type": "integer"
+      },
+      {
+        "name": "num_solved_treasure",
+        "type": "integer"
+      },
+      {
+        "name": "num_abandoned_treasure",
+        "type": "integer"
+      },
+      {
+        "name": "num_started_classic",
+        "type": "integer"
+      },
+      {
+        "name": "num_solved_classic",
+        "type": "integer"
+      },
+      {
+        "name": "num_abandoned_classic",
+        "type": "integer"
+      },
+      {
+        "name": "num_started_academy",
+        "type": "integer"
+      },
+      {
+        "name": "num_solved_academy",
+        "type": "integer"
+      }
+  ]}
+]
