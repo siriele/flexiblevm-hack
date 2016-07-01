@@ -4,7 +4,7 @@
     "type": "record",
     "fields": [
       {
-        "name": "manufacturer",
+        "name": "platform",
         "type": "string"
       },
       {
@@ -12,15 +12,7 @@
         "type": "string"
       },
       {
-        "name": "platform",
-        "type": "string"
-      },
-      {
         "name": "os",
-        "type": "string"
-      },
-      {
-        "name": "os_version",
         "type": "string"
       },
       {
@@ -37,7 +29,7 @@
       }
   ]},
   {
-    "name": "user_properties",
+    "name": "props_to_set",
     "type": "record",
     "fields": [
       {
@@ -61,12 +53,12 @@
         "type": "integer"
       },
       {
-        "name": "playtime_sec",
-        "type": "float"
+        "name": "playtime_ms",
+        "type": "integer"
       },
       {
-        "name": "leveltime_sec",
-        "type": "float"
+        "name": "leveltime_ms",
+        "type": "integer"
       },
       {
         "name": "level_starts",
@@ -113,8 +105,98 @@
             "type": "integer"
           },
           {
-            "name": "fov_hint_sec",
-            "type": "float"
+            "name": "fov_hint_ms",
+            "type": "integer"
+          },
+          {
+            "name": "table_hints_shown",
+            "type": "integer"
+          },
+          {
+            "name": "parallelogram_hints_shown",
+            "type": "integer"
+          }
+      ]}
+  ]},
+  {
+    "name": "props_to_increment",
+    "type": "record",
+    "fields": [
+      {
+        "name": "have_setup",
+        "type": "boolean"
+      },
+      {
+        "name": "last_language",
+        "type": "string"
+      },
+      {
+        "name": "have_hardware",
+        "type": "boolean"
+      },
+      {
+        "name": "have_extra_hardware",
+        "type": "boolean"
+      },
+      {
+        "name": "session_count",
+        "type": "integer"
+      },
+      {
+        "name": "playtime_ms",
+        "type": "integer"
+      },
+      {
+        "name": "leveltime_ms",
+        "type": "integer"
+      },
+      {
+        "name": "level_starts",
+        "type": "integer"
+      },
+      {
+        "name": "level_ends",
+        "type": "integer"
+      },
+      {
+        "name": "profiles",
+        "type": "integer"
+      },
+      {
+        "name": "last_mirror",
+        "type": "integer"
+      },
+      {
+        "name": "last_setup_debug",
+        "type": "string"
+      },
+      {
+        "name": "achievements_opened",
+        "type": "integer"
+      },
+      {
+        "name": "last_state",
+        "type": "string"
+      },
+      {
+        "name": "tangram",
+        "type": "record",
+        "fields": [
+          {
+            "name": "last_difficulty",
+            "type": "integer"
+          },
+          {
+            "name": "hints_used",
+            "type": "integer"
+          },
+          {
+            "name": "fov_hints_shown",
+            "type": "integer"
+          },
+          {
+            "name": "fov_hint_ms",
+            "type": "integer"
           },
           {
             "name": "table_hints_shown",
@@ -237,8 +319,8 @@
       ]}
   ]},
   {
-    "name": "leveltime_sec",
-    "type": "float"
+    "name": "leveltime_ms",
+    "type": "integer"
   },
   {
     "name": "language",
